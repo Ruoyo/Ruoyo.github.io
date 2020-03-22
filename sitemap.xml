@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/22/04.1%20CNN%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84---LeNet/</loc>
+    
+    <lastmod>2020-03-22T11:58:19.127Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/22/02.1%20torch.nn%E5%87%BD%E6%95%B0/</loc>
     
-    <lastmod>2020-03-22T09:20:17.401Z</lastmod>
+    <lastmod>2020-03-22T11:02:59.871Z</lastmod>
     
   </url>
   

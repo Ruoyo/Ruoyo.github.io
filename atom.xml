@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-21T04:00:01.206Z</updated>
+  <updated>2020-03-22T04:35:14.002Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Haar特征</title>
+    <link href="http://yoursite.com/2020/03/22/Haar%E7%89%B9%E5%BE%81/"/>
+    <id>http://yoursite.com/2020/03/22/Haar%E7%89%B9%E5%BE%81/</id>
+    <published>2020-03-22T04:35:49.970Z</published>
+    <updated>2020-03-22T04:35:14.002Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Haar特征"><a href="#Haar特征" class="headerlink" title="Haar特征"></a>Haar特征</h1><p>参考链接：<a href="https://blog.csdn.net/danmeng8068/article/details/80496776" target="_blank" rel="noopener">https://blog.csdn.net/danmeng8068/article/details/80496776</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Haar特征&quot;&gt;&lt;a href=&quot;#Haar特征&quot; class=&quot;headerlink&quot; title=&quot;Haar特征&quot;&gt;&lt;/a&gt;Haar特征&lt;/h1&gt;&lt;p&gt;参考链接：&lt;a href=&quot;https://blog.csdn.net/danmeng8068/articl
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Haar" scheme="http://yoursite.com/tags/Haar/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux语法</title>

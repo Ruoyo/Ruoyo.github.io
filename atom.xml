@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-22T12:45:03.986Z</updated>
+  <updated>2020-03-23T01:25:45.169Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pycharm使用教程</title>
+    <link href="http://yoursite.com/2020/03/23/14.3%20Pycharm%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2020/03/23/14.3%20Pycharm%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2020-03-23T01:27:48.050Z</published>
+    <updated>2020-03-23T01:25:45.169Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考链接：<a href="https://www.cnblogs.com/liangmingshen/p/9297381.html" target="_blank" rel="noopener">https://www.cnblogs.com/liangmingshen/p/9297381.html</a></p><h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><table><thead><tr><th>操作</th><th>快捷键</th><th>操作</th><th>快捷键</th></tr></thead><tbody><tr><td>复制本行到下一行</td><td>Ctrl + d</td><td>删除光标所在行</td><td>Ctrl + y</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table><h1 id="设置字体大小"><a href="#设置字体大小" class="headerlink" title="设置字体大小"></a>设置字体大小</h1><p>1、打开Pycharm，点击左上角的File，选择Settings…</p><p><img src="/" alt="Pycharm使用教程_1" class="lazyload" data-src="https://github.com/Ruoyo/img-folder/blob/master/14%20%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/Pycharm%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B_1.png?raw=true"></p><p>2、选择Editor下的Font 根据表格中字体大小，调整size，到合适大小，点击右下角的apply按钮即可</p><p><img src="/" alt="Pycharm使用教程_2" class="lazyload" data-src="https://github.com/Ruoyo/img-folder/blob/master/14%20%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/Pycharm%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B_2.png?raw=true"></p>]]></content>
+    
+    <summary type="html">
+    
+      Pycharm应用软件的常用快捷键、设置...
+    
+    </summary>
+    
+    
+      <category term="电脑软件" scheme="http://yoursite.com/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="使用教程" scheme="http://yoursite.com/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Pycharm" scheme="http://yoursite.com/tags/Pycharm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客使用</title>
+    <link href="http://yoursite.com/2020/03/23/06.5%20Hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/03/23/06.5%20Hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-03-23T01:27:34.739Z</published>
+    <updated>2020-03-23T01:27:25.377Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Front-matter使用详解"><a href="#Front-matter使用详解" class="headerlink" title="Front-matter使用详解"></a>Front-matter使用详解</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">常用设置</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">标题名</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">分类名</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">标签名</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">图片链接</span>  <span class="comment"># 文章封面：false--&gt;不显示封面</span></span><br><span class="line"><span class="attr">top_img:</span> <span class="string">图片链接</span> <span class="comment"># 顶部图：false--&gt;纯色图</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">描述语句</span></span><br><span class="line"><span class="string">//</span> <span class="string">不常用设置</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span> <span class="comment"># 是否显示文章TOC：ture or false</span></span><br><span class="line"><span class="attr">toc_number:</span> <span class="literal">true</span> <span class="comment"># 是否显示章节数：ture or false</span></span><br></pre></td></tr></table></figure><p>front-matter包含的内容<br>参数    描述    默认值<br>layout    布局<br>date    建立日期    文件建立日期<br>updated    更新日期    文件更新日期<br>comments    开启文章的评论功能    true<br>permalink    覆盖文章网址<br>keywords    仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</p><h2 id="给文章添加封面"><a href="#给文章添加封面" class="headerlink" title="给文章添加封面"></a>给文章添加封面</h2><p>文章的markdown文档上，在<code>Front-matter</code>添加<code>cover</code>，并填上要显示的图片地址。<br>如果不配置cover，可以设置显示默认的cover。<br>如果不想在首页显示cover，可以设置为false。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cover:</span> <span class="string">链接地址</span></span><br><span class="line"><span class="comment"># 链接地址1：http://xxxx</span></span><br><span class="line"><span class="comment"># 链接地址2：/img/图片名</span></span><br></pre></td></tr></table></figure><h2 id="文章使用自定义分节"><a href="#文章使用自定义分节" class="headerlink" title="文章使用自定义分节"></a>文章使用自定义分节</h2><p>为特定的文章配置是否显示 TOC 和特定的目录章节数字</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">toc:</span> <span class="literal">true</span> <span class="comment"># 是否显示文章TOC：ture or false</span></span><br><span class="line"><span class="attr">toc_number:</span> <span class="literal">true</span> <span class="comment"># 是否显示章节数：ture or false</span></span><br></pre></td></tr></table></figure><p>配置之后你的特定的文章将会拥有它自己的目录数字的显示与否，而不会受全局的配置影响</p>]]></content>
+    
+    <summary type="html">
+    
+      Hexo搭建完成后，发布文章表头设置...
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>CNN网络架构---LeNet</title>

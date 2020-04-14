@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CNN网络架构---LeNet | Ruoyo的个人博客</title><meta name="description" content="CNN网络架构---LeNet"><meta name="keywords" content="LeNet"><meta name="author" content="Ruoyo"><meta name="copyright" content="Ruoyo"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="CNN网络架构---LeNet"><meta name="twitter:description" content="CNN网络架构---LeNet"><meta name="twitter:image" content="https://ruoyo.github.io/img/post.jpg"><meta property="og:type" content="article"><meta property="og:title" content="CNN网络架构---LeNet"><meta property="og:url" content="https://ruoyo.github.io/2020/03/22/04.1%20CNN%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84---LeNet/"><meta property="og:site_name" content="Ruoyo的个人博客"><meta property="og:description" content="CNN网络架构---LeNet"><meta property="og:image" content="https://ruoyo.github.io/img/post.jpg"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CNN网络架构---LeNet | Ruoyo的个人博客</title><meta name="description" content="CNN网络架构---LeNet"><meta name="keywords" content="LeNet"><meta name="author" content="Ruoyo"><meta name="copyright" content="Ruoyo"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/qqtx.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="CNN网络架构---LeNet"><meta name="twitter:description" content="CNN网络架构---LeNet"><meta name="twitter:image" content="https://ruoyo.github.io/img/post.jpg"><meta property="og:type" content="article"><meta property="og:title" content="CNN网络架构---LeNet"><meta property="og:url" content="https://ruoyo.github.io/2020/03/22/04.1%20CNN%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84---LeNet/"><meta property="og:site_name" content="Ruoyo的个人博客"><meta property="og:description" content="CNN网络架构---LeNet"><meta property="og:image" content="https://ruoyo.github.io/img/post.jpg"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
 var t = Cookies.get("theme")
 if (autoChangeMode == '1'){
   const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -79,55 +79,59 @@ function activateLightMode(){
 <p>层数很浅，并且kernel大小单一，C1、C3、C5三个卷积层使用的kernel大小全部都是5×5。C5的feature map大小为1×1是因为，S4的feature map大小为5×5而kernel大小与其相同，所以卷积的结果大小是 1×1。</p>
 <p>S2和S4两个池化层使用的window大小均为2×2，这里的池化有两种。</p>
 <p>F6是一个有84个神经元的全连接层。</p>
-<h1 id="网络参数"><a href="#网络参数" class="headerlink" title="网络参数"></a>网络参数</h1><table>
+<h1 id="网络参数"><a href="#网络参数" class="headerlink" title="网络参数"></a>网络参数</h1><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>layer name</th>
-<th align="center">kernel size</th>
-<th align="center">output size</th>
+<th style="text-align:center">kernel size</th>
+<th style="text-align:center">output size</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>输入层</td>
-<td align="center">\</td>
-<td align="center">32x32</td>
+<td style="text-align:center">\</td>
+<td style="text-align:center">32x32</td>
 </tr>
 <tr>
 <td>卷积层1</td>
-<td align="center">5x5</td>
-<td align="center">6x28x28</td>
+<td style="text-align:center">5x5</td>
+<td style="text-align:center">6x28x28</td>
 </tr>
 <tr>
 <td>MaxPool1</td>
-<td align="center">2x2，stride=2</td>
-<td align="center">6x14x14</td>
+<td style="text-align:center">2x2，stride=2</td>
+<td style="text-align:center">6x14x14</td>
 </tr>
 <tr>
 <td>卷积层2</td>
-<td align="center">5x5</td>
-<td align="center">16x10x10</td>
+<td style="text-align:center">5x5</td>
+<td style="text-align:center">16x10x10</td>
 </tr>
 <tr>
 <td>MaxPool1</td>
-<td align="center">2x2，stride=2</td>
-<td align="center">16x5x5</td>
+<td style="text-align:center">2x2，stride=2</td>
+<td style="text-align:center">16x5x5</td>
 </tr>
 <tr>
 <td>全连接层1</td>
-<td align="center">16x5x5</td>
-<td align="center">120</td>
+<td style="text-align:center">16x5x5</td>
+<td style="text-align:center">120</td>
 </tr>
 <tr>
 <td>全连接层2</td>
-<td align="center">120</td>
-<td align="center">84</td>
+<td style="text-align:center">120</td>
+<td style="text-align:center">84</td>
 </tr>
 <tr>
 <td>输出层</td>
-<td align="center">84</td>
-<td align="center">10</td>
+<td style="text-align:center">84</td>
+<td style="text-align:center">10</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h1 id="模型简介"><a href="#模型简介" class="headerlink" title="模型简介"></a>模型简介</h1><p>用下图所示的模型，更加直观：</p>
 <p><img src="/" alt="" class="lazyload" data-src="https://img-blog.csdnimg.cn/2019070709230860.png"></p>
 <p>第一层：输入层，图片大小为 32×32×1，其中 1 表示为黑白图像，这些手写字体包含0~9数字，也就是相当于10个类别的图片。<br>第二层：C1，卷积层，filter 大小 5×5，filter 深度（个数）为 6，padding 为 0， 卷积步长 s=1，输出矩阵大小为 28×28×6，其中 6 表示 filter 的个数。所以共有28×28×6个神经元（32-5+1=28），参数数量为156（5∗5∗6+6=1565<em>5</em>6+6=1565∗5∗6+6=156，6为偏置项参数）,每一个单元与输入层的25个单元连接。<br>第三层：S2，池化下采样层，平均池化，filter 大小 2×2（即 f=2），步长 s=2，no padding，输出矩阵大小为 14×14×6。<br>第四层：：C3，卷积层，filter 大小 5×5，filter 个数为 16，padding 为 0， 卷积步长 s=1，输出矩阵大小为 10×10×16，其中 16 表示 filter 的个数。<br>第五层：S4，池化下采样层，average pooling，filter 大小 2×2（即 f=2），步长 s=2，no padding，输出矩阵大小为 5×5×16。注意，在该层结束，需要将 5×5×16 的矩阵flatten 成一个 400 维的向量。<br>第六层：C5，卷积层，有120个特征图，每个特征图有一个神经元，卷积核大小为5×5，步长 s=1，no padding。<br>第七层：F6，全连接层，有84个神经元，与C5层构成全连接关系，使用sigmoid激活函数。<br>第八层：输出层，十分类任务，有10个神经元。</p>
@@ -153,6 +157,26 @@ window.valine = new Valine({
   lang: 'zh-cn',
   recordIP: false,
   serverURLs: ''
-});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Ruoyo</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>$(function () {
-  $('span.katex-display').wrap('<div class="katex-wrap"></div>')
-})</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Ruoyo</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
